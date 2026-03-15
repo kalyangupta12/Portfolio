@@ -56,9 +56,9 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
     const ogImageUrl = generateOGImageUrl(config, baseUrl)
 
     const metadata: OGMetaTags = {
-      title: 'Minimalist Engineer Portfolio',
+      title: 'Kalyan Gupta',
       description:
-        'A single-page software engineer portfolio with strict minimalist aesthetics, serif and monospace typography pairing, and deliberate whitespace-driven layout.',
+        'Full Stack Developer and GenAI builder. MCA student at Dibrugarh University. 12 production websites shipped, experienced with MERN, LangChain, RAG, and MCP.',
       image: ogImageUrl,
       url: typeof window !== 'undefined' ? window.location.href : baseUrl,
     }
@@ -75,16 +75,25 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
           content: 'width=device-width, initial-scale=1',
         },
         {
-          title: 'Minimalist Engineer Portfolio',
+          title: 'Kalyan Gupta',
         },
         {
           name: 'description',
           content:
-            'A single-page software engineer portfolio with strict minimalist aesthetics, serif and monospace typography pairing, and deliberate whitespace-driven layout.',
+            'Full Stack Developer and GenAI builder. MCA student at Dibrugarh University. 12 production websites shipped, experienced with MERN, LangChain, RAG, and MCP.',
         },
         ...ogTags.meta,
       ],
       links: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: '/favicon.svg',
+        },
+        {
+          rel: 'alternate icon',
+          href: '/favicon.ico',
+        },
         {
           rel: 'stylesheet',
           href: appCss,

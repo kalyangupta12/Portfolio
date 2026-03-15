@@ -1,4 +1,4 @@
-# kalyangupta.dev
+# kalyan.devplexity.com
 
 Personal portfolio of **Kalyan Gupta** — Full Stack Developer, MCA Student, and GenAI builder based in Dibrugarh, Assam.
 

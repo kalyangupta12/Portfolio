@@ -8,6 +8,7 @@ interface Degree {
   period: string
   location: string
   note: string
+  cgpa?: string
 }
 
 const education: Degree[] = [
@@ -27,7 +28,8 @@ const education: Degree[] = [
     field: 'Bachelor of Computer Applications',
     period: '2022 — 2025',
     location: 'Dibrugarh, Assam',
-    note: 'Core coursework: Data Structures, Operating Systems, Database Management Systems, Web Technologies, Computer Networks, Object-Oriented Programming (Java). CGPA: 8.81',
+    note: 'Core coursework: Data Structures, Operating Systems, Database Management Systems, Web Technologies, Computer Networks, Object-Oriented Programming (Java).',
+    cgpa: '8.81',
   },
 ]
 
@@ -104,6 +106,7 @@ export function PortfolioEducation() {
                   <p className="pf-edu__degree">
                     <span className="pf-edu__degree-type">{edu.degree}</span>{' '}
                     — {edu.field}
+                    {edu.cgpa && <span className="pf-edu__cgpa">{edu.cgpa}&nbsp;CGPA</span>}
                   </p>
                   <p className="pf-edu__note">{edu.note}</p>
                 </div>

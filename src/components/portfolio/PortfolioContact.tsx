@@ -47,7 +47,7 @@ export function PortfolioContact() {
                 Open to Work — Available Now
               </span>
               <span className="pf-contact__location">
-                Charaideo, Assam, India · Open to Remote &amp; Relocation
+                Dibrugarh, Assam, India · Open to Remote &amp; Relocation
               </span>
             </div>
           </motion.div>

@@ -82,9 +82,8 @@ export function PortfolioHero() {
           transition={{ delay: 0.95, duration: 0.6, ease: 'easeOut' }}
         >
           I build full-stack web applications and explore what's possible with
-          generative AI. 12 production websites shipped as a software
-          development intern, 2+ years of technical community leadership at
-          GDSC, and hands-on experience with LangChain, RAG, AgentSDK's and MCP.
+          generative AI. 12 production websites shipped, hands-on experience
+          with LangChain, RAG, AgentSDK's and MCP.
         </motion.p>
 
         <motion.div
@@ -97,13 +96,13 @@ export function PortfolioHero() {
             { label: 'GitHub', href: 'https://github.com/kalyangupta12' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/kalyangupta12' },
             { label: 'devplexity', href: 'https://devplexity.com' },
-            { label: 'Resume', href: '/resume.pdf' },
+            { label: 'Resume', href: '/resume' },
           ].map((link) => (
             <a
               key={link.label}
               href={link.href}
               className="pf-hero__social-link"
-              target={link.href !== '/resume.pdf' ? '_blank' : undefined}
+              target={link.href.startsWith('/') ? undefined : '_blank'}
               rel="noopener noreferrer"
             >
               {link.label}

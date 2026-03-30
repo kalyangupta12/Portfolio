@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as PublicRouteImport } from './routes/_public'
 import { Route as ProtectedRouteImport } from './routes/_protected'
 import { Route as AuthRouteImport } from './routes/_auth'
@@ -22,6 +23,11 @@ import { Route as AuthForgotPasswordRouteImport } from './routes/_auth/forgot-pa
 import { Route as ApiOgRouteImport } from './routes/_api/og'
 import { Route as ApiHelloRouteImport } from './routes/_api/hello'
 
+const ResumeRoute = ResumeRouteImport.update({
+  id: '/resume',
+  path: '/resume',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
   getParentRoute: () => rootRouteImport,
@@ -83,6 +89,7 @@ const ApiHelloRoute = ApiHelloRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof PublicIndexRoute
+  '/resume': typeof ResumeRoute
   '/hello': typeof ApiHelloRoute
   '/og': typeof ApiOgRoute
   '/forgot-password': typeof AuthForgotPasswordRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof PublicIndexRoute
+  '/resume': typeof ResumeRoute
   '/hello': typeof ApiHelloRoute
   '/og': typeof ApiOgRoute
   '/forgot-password': typeof AuthForgotPasswordRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/_auth': typeof AuthRouteWithChildren
   '/_protected': typeof ProtectedRouteWithChildren
   '/_public': typeof PublicRouteWithChildren
+  '/resume': typeof ResumeRoute
   '/_api/hello': typeof ApiHelloRoute
   '/_api/og': typeof ApiOgRoute
   '/_auth/forgot-password': typeof AuthForgotPasswordRoute
@@ -122,6 +131,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/resume'
     | '/hello'
     | '/og'
     | '/forgot-password'
@@ -133,6 +143,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/resume'
     | '/hello'
     | '/og'
     | '/forgot-password'
@@ -146,6 +157,7 @@ export interface FileRouteTypes {
     | '/_auth'
     | '/_protected'
     | '/_public'
+    | '/resume'
     | '/_api/hello'
     | '/_api/og'
     | '/_auth/forgot-password'
@@ -161,12 +173,20 @@ export interface RootRouteChildren {
   AuthRoute: typeof AuthRouteWithChildren
   ProtectedRoute: typeof ProtectedRouteWithChildren
   PublicRoute: typeof PublicRouteWithChildren
+  ResumeRoute: typeof ResumeRoute
   ApiHelloRoute: typeof ApiHelloRoute
   ApiOgRoute: typeof ApiOgRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/resume': {
+      id: '/resume'
+      path: '/resume'
+      fullPath: '/resume'
+      preLoaderRoute: typeof ResumeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_public': {
       id: '/_public'
       path: ''
@@ -299,6 +319,7 @@ const rootRouteChildren: RootRouteChildren = {
   AuthRoute: AuthRouteWithChildren,
   ProtectedRoute: ProtectedRouteWithChildren,
   PublicRoute: PublicRouteWithChildren,
+  ResumeRoute: ResumeRoute,
   ApiHelloRoute: ApiHelloRoute,
   ApiOgRoute: ApiOgRoute,
 }

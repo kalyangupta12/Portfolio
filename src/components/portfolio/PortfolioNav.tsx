@@ -32,9 +32,10 @@ export function PortfolioNav() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="pf-nav__inner">
-          <a href="#hero" className="pf-nav__name">
-            Kalyan Gupta
+          <a href="#hero" className="pf-nav__logo">
+            KG
           </a>
+          <span className="pf-nav__available">Open to Work</span>
           <ul className="pf-nav__links">
             {links.map((link, i) => (
               <motion.li

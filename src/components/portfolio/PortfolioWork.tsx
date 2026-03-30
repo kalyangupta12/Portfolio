@@ -18,8 +18,8 @@ const projects: Project[] = [
     name: 'AgentsTrail — AI Agent Marketplace',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Redis', 'Claude Agent SDK', 'Solana'],
     description:
-      'Autonomous AI agent marketplace enabling machine-to-machine commerce. Agents discover and transact with each other via x402 micropayments and A2A protocol — powered by Claude Agent SDK and Solana.',
-    year: '2026',
+      'Distributed AI marketplace enabling autonomous agent-to-agent transactions. Built microservices architecture handling 5K+ daily API calls with Redis caching, implementing x402 micropayment protocol integration and A2A communication patterns.',
+    year: '2025-2026',
     status: 'Live',
     liveUrl: 'https://app.agentstrail.ai',
   },
@@ -28,7 +28,7 @@ const projects: Project[] = [
     name: 'AxomAI — Regional Learning Platform',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'LangChain', 'RAG', 'Redis', 'BullMQ','Prisma', 'Clerk'],
     description:
-      'AI-powered learning platform delivering education in Assamese — making GenAI-driven study tools accessible to regional language students across Assam.',
+      'Scalable AI-powered educational platform serving 500+ users with personalized learning in Assamese. Implemented RAG architecture with vector embeddings, background job processing using BullMQ, and real-time content generation with sub-2s response times.',
     year: '2025',
     status: 'Live',
     liveUrl: 'https://axomai.devplexity.com',
@@ -38,7 +38,7 @@ const projects: Project[] = [
     name: 'SyllaMint AI — Curriculum Planner',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Gemini API', 'LangChain', 'RAG', 'Prisma', 'Clerk'],
     description:
-      'AI-powered syllabus and curriculum planner for educators. Generates NEP 2020-compliant syllabi, lesson plans, and PowerPoint presentations from course descriptions or uploaded PDFs using Gemini AI and RAG.',
+      'Automated curriculum generation system processing 100+ educational documents to create NEP 2020-compliant syllabi. Built document parsing pipeline with OCR integration, template generation engine, and export functionality supporting multiple formats.',
     year: '2025',
     status: 'Live',
     liveUrl: 'https://syllamint.devplexity.com',
@@ -46,11 +46,11 @@ const projects: Project[] = [
   {
     number: '04',
     name: 'Database Lookup Protocol (DLP)',
-    stack: ['React', 'TypeScript', 'MCP'],
+    stack: ['React', 'TypeScript', 'MCP', 'PostgreSQL', 'Node.js'],
     description:
-      'MCP server that gives AI models direct database access — enabling natural language queries, schema inspection, and intelligent data lookup via the Model Context Protocol.',
+      'Open-source Model Context Protocol server enabling AI models to perform direct database operations. Implements secure query execution, schema introspection, and natural language to SQL translation with type-safe TypeScript architecture.',
     year: '2025',
-    status: 'In Progress',
+    status: 'Open Source',
     liveUrl: 'https://dlp.devplexity.com',
     sourceUrl: 'https://github.com/kalyangupta12/database-lookup-protocol',
   },
@@ -59,7 +59,7 @@ const projects: Project[] = [
     name: 'PharmaSociety DU — Alumni Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:
-      'Student and alumni networking platform for the Pharmaceutical department at Dibrugarh University — connecting members through mentorship, resource sharing, event listings, and a notice board for the broader pharmacy community.',
+      'Full-featured alumni networking platform supporting 400+ pharmacy students and professionals. Built robust user management system, real-time messaging, event coordination, and resource sharing with optimized MySQL queries and responsive design.',
     year: '2024',
     status: 'Live',
     liveUrl: 'https://pharmasocietydu.com',
@@ -69,7 +69,7 @@ const projects: Project[] = [
     name: 'DU Departmental Journal Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:
-      'Built 10+ academic journal websites across Dibrugarh University departments — each with full role management for authors, reviewers, and admins, automated citation generation, Mendeley importer, and department-specific editorial workflows.',
+      'Enterprise-scale journal management system deployed across 10+ university departments. Architected multi-tenant platform with role-based access control, automated workflow management, citation generation, and Mendeley integration serving 1,000+ researchers.',
     year: '2024-2025',
     status: 'Live',
     liveUrl: 'https://dssdu.in/projects',

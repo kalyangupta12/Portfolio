@@ -2,27 +2,31 @@ import { motion } from 'framer-motion'
 
 const skills = [
   'JavaScript',
+  'TypeScript',
   'Java',
   'React',
   'Node.js',
-  'PostgreSQL',
   'Express',
-  'C/C++',
+  'PostgreSQL',
+  'MySQL',
+  'MongoDB',
   'LangChain',
-  'RAG',
-  'MCP',
-  'GCP',
-  'Azure',
+  'RAG Systems',
+  'Model Context Protocol',
+  'Google Cloud Platform',
+  'Microsoft Azure',
   'Docker',
   'REST APIs',
   'Git',
   'Linux',
+  'Redis',
+  'Prisma ORM',
 ]
 
 const paragraphs = [
-  'I build full-stack web applications and explore what\'s possible with generative AI. Currently in my MCA at Dibrugarh University — with a BCA foundation and 12 production websites shipped during my ongoing internship at the Digital Solution Cell.',
-  'I\'m comfortable owning problems end-to-end — from unclear requirement to deployed product. I\'ve shipped across MERN, GenAI, and PHP stacks, and I ask the questions that need asking before writing a single line.',
-  'Looking for full-time or part-time opportunities in web development or AI engineering. Open to startups, product companies, and any team that ships real things for real users.',
+  'Software engineer with expertise in full-stack development and AI system design. Currently pursuing MCA at Dibrugarh University while building production applications for enterprise and academic clients across multiple technology stacks.',
+  'I specialize in end-to-end product development — from requirements analysis and system design to deployment and monitoring. My recent focus includes building scalable web applications with React/Node.js and implementing AI workflows using LangChain, RAG architectures, and the Model Context Protocol.',
+  'Seeking full-time software engineering roles where I can contribute to complex technical challenges and scalable systems. Particularly interested in distributed systems, AI/ML engineering, and building products that solve real user problems.',
 ]
 
 export function PortfolioAbout() {

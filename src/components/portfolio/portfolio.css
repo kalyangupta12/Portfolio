@@ -1606,6 +1606,13 @@ body {
 .pf-card__link--live::after {
   opacity: 1;
 }
+.pf-card__link--action {
+  color: var(--color-text);
+  font-weight: 600;
+}
+.pf-card__link--action::after {
+  opacity: 0.8;
+}
 .pf-card__link:hover { opacity: 0.6; }
 
 /* ─────────────────────────────────────────────────────────────

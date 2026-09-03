@@ -15,7 +15,7 @@ const jobs: Job[] = [
     number: '01',
     company: 'AgentsTrail AI',
     role: 'Part-time Software Developer',
-    period: 'Jan 2025 — Present',
+    period: 'Jan 2026 — Mar 2026',
     location: 'Remote',
     type: 'Part-time',
     bullets: [

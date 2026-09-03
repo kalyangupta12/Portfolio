@@ -3,21 +3,21 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     quote:
-      'Kalyan joined us and started delivering independently within weeks. The journal platforms he built are live across our research departments, each one tailored, reliable, and maintainable. That\'s rare for someone so early in their career.',
+      'Kalyan is one of those rare students who doesn\'t wait around for instructions. When we tasked him with the department journals, he took complete ownership from day one and had them deployed smoothly. Incredibly dependable and quick to grasp complex technical requirements.',
     name: 'Dr. Rizwan Rehman',
     title: 'Coordinator',
     company: 'Digital Solution Cell, Dibrugarh University, Dibrugarh, Assam, India',
   },
   {
     quote:
-      'Kalyan built the HRMS module for hiresetu.in from the ground up: employee records, attendance, leave, payroll. He understood the product requirements quickly and shipped something the team could actually build on top of.',
+      'We needed our internal HRMS built fast and without friction, and Kalyan delivered exactly that. He is pragmatic, understands business requirements right away, and writes clean, maintainable code that our team could easily build on top of.',
     name: 'Ashwini Dowerah',
     title: 'Director',
     company: 'GA LLP, Salt Brook Academy, Dibrugarh, Assam, India',
   },
   {
     quote:
-      'He integrated Composio into our platform and wired up cron jobs for the internal workflow builder. Both shipped cleanly without touching existing infrastructure. Exactly the kind of part-time contributor you want: minimal handholding, solid output.',
+      'Kalyan was fantastic to work with. He jumped straight into our codebase, tackled complex third-party API integrations without breaking anything, and communicated proactively. Zero handholding needed, you just gave him the goal and he shipped it.',
     name: 'Gourav Mehra',
     title: 'CMO & Strategy Lead',
     company: 'AgentsTrail AI, Chandigarh, India',

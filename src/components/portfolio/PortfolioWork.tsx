@@ -9,39 +9,47 @@ interface Project {
   year: string
   status: string
   liveUrl?: string
+  liveUrlLabel?: string
   sourceUrl?: string
+  actionUrl?: string
+  actionLabel?: string
 }
 
 const projects: Project[] = [
   {
     number: '01',
     name: 'AgentsTrail — AI Agent Marketplace',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Redis', 'Claude Agent SDK', 'Solana'],
+    stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Redis', 'Claude Agent SDK', 'Composio', 'Solana'],
     description:
-      'Distributed AI marketplace enabling autonomous agent-to-agent transactions. Built microservices architecture handling 5K+ daily API calls with Redis caching, implementing x402 micropayment protocol integration and A2A communication patterns.',
-    year: '2025-2026',
-    status: 'Live',
-    liveUrl: 'https://app.agentstrail.ai',
+      'Distributed AI marketplace enabling autonomous agent-to-agent transactions. Engineered core microservices handling 5K+ daily API calls, Redis caching, x402 micropayments, and Composio tool integrations (contributions Jan 2026 – Mar 2026). Platform is currently undergoing an architectural revamp and rebuilding phase led by the next engineering team.',
+    year: '2026',
+    status: 'Rebuilding Phase',
+    liveUrl: 'https://agentstrail.ai',
+    liveUrlLabel: 'Live (V1 / Revamp) ↗',
   },
   {
     number: '02',
-    name: 'AxomAI — Regional Learning Platform',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'LangChain', 'RAG', 'Redis', 'BullMQ','Prisma', 'Clerk'],
+    name: 'AxomAI — Regional Learning & Speech Platform',
+    stack: ['React', 'Node.js', 'Python', 'FastAPI', 'Speech-to-Text', 'Assamese NLP', 'LangChain', 'RAG'],
     description:
-      'Scalable AI-powered educational platform serving 500+ users with personalized learning in Assamese. Implemented RAG architecture with vector embeddings, background job processing using BullMQ, and real-time content generation with sub-2s response times.',
-    year: '2025',
-    status: 'Live',
-    liveUrl: 'https://axomai.devplexity.com',
+      'Regional Assamese AI initiative developed jointly in collaboration with Asst. Prof. Dr. Rizwan Rehman (CCSA, Dibrugarh University). The comprehensive regional learning platform is currently under active development and scheduled to undergo institutional testing soon. Meanwhile, the Assamese speech transcription (ASR / Speech-to-Text) and real-time translation engines are undergoing active live testing at axomai.app.',
+    year: '2025–Present',
+    status: 'Live Testing',
+    liveUrl: 'https://axomai.app',
+    liveUrlLabel: 'Live Testing ↗',
+    actionUrl: 'mailto:kalyangupta2002@gmail.com?subject=AxomAI%20Platform%20Testing%20Access%20Request',
+    actionLabel: 'Ask for Testing ↗',
   },
   {
     number: '03',
     name: 'SyllaMint AI — Curriculum Planner',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Gemini API', 'LangChain', 'RAG', 'Prisma', 'Clerk'],
     description:
-      'Automated curriculum generation system processing 100+ educational documents to create NEP 2020-compliant syllabi. Built document parsing pipeline with OCR integration, template generation engine, and export functionality supporting multiple formats.',
+      'Automated curriculum generation system processing 100+ educational documents to create NEP 2020-compliant syllabi with OCR parsing and structured exports. The platform does not currently have a live deployment, but the complete production codebase, pipeline architecture, and documentation are available for purchase or IP transfer.',
     year: '2025',
-    status: 'Live',
-    liveUrl: 'https://syllamint.devplexity.com',
+    status: 'Code for Sale',
+    actionUrl: 'mailto:kalyangupta2002@gmail.com?subject=SyllaMint%20AI%20Codebase%20Acquisition%20Inquiry',
+    actionLabel: 'Acquire Code ↗',
   },
   {
     number: '04',
@@ -54,7 +62,7 @@ const projects: Project[] = [
     liveUrl: 'https://dlp.devplexity.com',
     sourceUrl: 'https://github.com/kalyangupta12/database-lookup-protocol',
   },
- {
+  {
     number: '05',
     name: 'PharmaSociety DU — Alumni Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
@@ -191,7 +199,18 @@ function ProjectCard({
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-              Live ↗
+              {project.liveUrlLabel || 'Live ↗'}
+            </a>
+          )}
+          {project.actionUrl && (
+            <a
+              href={project.actionUrl}
+              className="pf-card__link pf-card__link--action"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {project.actionLabel || 'Acquire Code ↗'}
             </a>
           )}
           {project.sourceUrl && (

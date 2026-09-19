@@ -170,25 +170,13 @@ export function PortfolioFooter() {
             <DiscordStatus />
           </div>
           <div className="pf-footer__right">
-            <div className="pf-footer__socials">
-              {[
-                { label: 'GitHub',     href: 'https://github.com/kalyangupta12' },
-                { label: 'LinkedIn',   href: 'https://linkedin.com/in/kalyangupta12' },
-                { label: 'devplexity', href: 'https://devplexity.com' },
-              ].map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="pf-footer__social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-            <a href="mailto:kalyangupta2002@gmail.com" className="pf-footer__email">
-              kalyangupta2002@gmail.com
+            <a
+              href="https://devplexity.com"
+              className="pf-footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              devplexity
             </a>
           </div>
         </motion.div>

@@ -18,17 +18,6 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    name: 'AgentsTrail — AI Agent Marketplace',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'Redis', 'Claude Agent SDK', 'Composio', 'Solana'],
-    description:
-      'Distributed AI marketplace enabling autonomous agent-to-agent transactions. Engineered core microservices handling 5K+ daily API calls, Redis caching, x402 micropayments, and Composio tool integrations (contributions Jan 2026 – Mar 2026). Platform is currently undergoing an architectural revamp and rebuilding phase led by the next engineering team.',
-    year: '2026',
-    status: 'Rebuilding Phase',
-    liveUrl: 'https://agentstrail.ai',
-    liveUrlLabel: 'Live (V1 / Revamp) ↗',
-  },
-  {
-    number: '02',
     name: 'AxomAI — Regional Learning & Speech Platform',
     stack: ['React', 'Node.js', 'Python', 'FastAPI', 'Speech-to-Text', 'Assamese NLP', 'LangChain', 'RAG'],
     description:
@@ -41,18 +30,18 @@ const projects: Project[] = [
     actionLabel: 'Ask for Testing ↗',
   },
   {
-    number: '03',
+    number: '02',
     name: 'SyllaMint AI — Curriculum Planner',
     stack: ['React', 'Node.js', 'PostgreSQL', 'Gemini API', 'LangChain', 'RAG', 'Prisma', 'Clerk'],
     description:
-      'Automated curriculum generation system processing 100+ educational documents to create NEP 2020-compliant syllabi with OCR parsing and structured exports. The platform does not currently have a live deployment, but the complete production codebase, pipeline architecture, and documentation are available for purchase or IP transfer.',
+      'Automated curriculum generation system processing 100+ educational documents to create NEP 2020-compliant syllabi, lesson plans, and structured exports with OCR parsing and Gemini AI.',
     year: '2025',
-    status: 'Code for Sale',
-    actionUrl: 'mailto:kalyangupta2002@gmail.com?subject=SyllaMint%20AI%20Codebase%20Acquisition%20Inquiry',
-    actionLabel: 'Acquire Code ↗',
+    status: 'Live',
+    liveUrl: 'https://syllamint.devplexity.com',
+    liveUrlLabel: 'Live ↗',
   },
   {
-    number: '04',
+    number: '03',
     name: 'Database Lookup Protocol (DLP)',
     stack: ['React', 'TypeScript', 'MCP', 'PostgreSQL', 'Node.js'],
     description:
@@ -63,7 +52,7 @@ const projects: Project[] = [
     sourceUrl: 'https://github.com/kalyangupta12/database-lookup-protocol',
   },
   {
-    number: '05',
+    number: '04',
     name: 'PharmaSociety DU — Alumni Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:
@@ -73,7 +62,7 @@ const projects: Project[] = [
     liveUrl: 'https://pharmasocietydu.com',
   },
   {
-    number: '06',
+    number: '05',
     name: 'DU Departmental Journal Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:
@@ -210,7 +199,7 @@ function ProjectCard({
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-              {project.actionLabel || 'Acquire Code ↗'}
+              {project.actionLabel || 'Learn More ↗'}
             </a>
           )}
           {project.sourceUrl && (

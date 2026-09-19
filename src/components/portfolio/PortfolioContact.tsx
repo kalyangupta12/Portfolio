@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 export function PortfolioContact() {
   return (
@@ -42,6 +43,26 @@ export function PortfolioContact() {
             >
               kalyangupta2002@gmail.com
             </a>
+            <div className="pf-contact__socials">
+              <a
+                href="https://github.com/kalyangupta12"
+                className="pf-contact__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubLogo size={18} weight="regular" className="pf-contact__social-icon" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/kalyangupta12"
+                className="pf-contact__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedinLogo size={18} weight="regular" className="pf-contact__social-icon" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
             <div className="pf-contact__meta">
               <span className="pf-contact__status">
                 Open to Work — Available Now

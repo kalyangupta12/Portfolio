@@ -30,7 +30,7 @@ const setAppwriteSessionCookiesSchema = z.object({
 })
 
 export const setAppwriteSessionCookiesFn = createServerFn({ method: 'POST' })
-  .inputValidator(setAppwriteSessionCookiesSchema)
+  .validator(setAppwriteSessionCookiesSchema)
   .handler(
     async ({
       data,
@@ -74,7 +74,7 @@ const signUpInSchema = z.object({
 })
 
 export const signUpFn = createServerFn({ method: 'POST' })
-  .inputValidator(signUpInSchema)
+  .validator(signUpInSchema)
   .handler(async ({ data }) => {
     const { email, password, redirect: redirectUrl } = data
     const { account } = createAdminClient()
@@ -118,7 +118,7 @@ export const signUpFn = createServerFn({ method: 'POST' })
   })
 
 export const signInFn = createServerFn({ method: 'POST' })
-  .inputValidator(signUpInSchema)
+  .validator(signUpInSchema)
   .handler(async ({ data }) => {
     const { email, password, redirect: redirectUrl } = data
     const { account } = createAdminClient()
@@ -221,7 +221,7 @@ const forgotPasswordSchema = z.object({
 })
 
 export const forgotPasswordFn = createServerFn({ method: 'POST' })
-  .inputValidator(forgotPasswordSchema)
+  .validator(forgotPasswordSchema)
   .handler(async ({ data }) => {
     const { email } = data
     const { account } = createAdminClient()
@@ -261,7 +261,7 @@ const resetPasswordSchema = z.object({
 })
 
 export const resetPasswordFn = createServerFn({ method: 'POST' })
-  .inputValidator(resetPasswordSchema)
+  .validator(resetPasswordSchema)
   .handler(async ({ data }) => {
     const { userId, secret, password, confirmPassword } = data
     const { account } = createAdminClient()

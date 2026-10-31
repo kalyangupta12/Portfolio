@@ -39,7 +39,7 @@ const jobs: Job[] = [
   },
   {
     number: '03',
-    company: 'Salt Brook Academy — GA LLP',
+    company: 'Salt Brook Academy — AG LLP',
     role: 'Part-time Software Developer',
     period: 'Dec 2024 - July 2025',
     location: 'Dibrugarh, Assam, India',

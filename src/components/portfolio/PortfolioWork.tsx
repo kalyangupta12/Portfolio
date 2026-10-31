@@ -42,6 +42,16 @@ const projects: Project[] = [
   },
   {
     number: '03',
+    name: 'Production Hardener — Agent Skill',
+    stack: ['Agent Skills', 'Bash', 'Docker', 'PostgreSQL', 'Redis', 'k6', 'Next.js'],
+    description:
+      'Reusable Agent Skill for evidence-driven production hardening of modern web applications. Audits architecture, guides realistic k6 saturation testing, optimizes database/cache performance, and produces defensible safe-capacity reports.',
+    year: '2026',
+    status: 'Open Source',
+    sourceUrl: 'https://github.com/kalyangupta12/production-hardener-skill',
+  },
+  {
+    number: '04',
     name: 'Database Lookup Protocol (DLP)',
     stack: ['React', 'TypeScript', 'MCP', 'PostgreSQL', 'Node.js'],
     description:
@@ -52,7 +62,7 @@ const projects: Project[] = [
     sourceUrl: 'https://github.com/kalyangupta12/database-lookup-protocol',
   },
   {
-    number: '04',
+    number: '05',
     name: 'PharmaSociety DU — Alumni Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:
@@ -62,7 +72,7 @@ const projects: Project[] = [
     liveUrl: 'https://pharmasocietydu.com',
   },
   {
-    number: '05',
+    number: '06',
     name: 'DU Departmental Journal Network',
     stack: ['PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
     description:

@@ -13,7 +13,7 @@ const testimonials = [
       'We needed our internal HRMS built fast and without friction, and Kalyan delivered exactly that. He is pragmatic, understands business requirements right away, and writes clean, maintainable code that our team could easily build on top of.',
     name: 'Ashwini Dowerah',
     title: 'Director',
-    company: 'GA LLP, Salt Brook Academy, Dibrugarh, Assam, India',
+    company: 'AG LLP, Salt Brook Academy, Dibrugarh, Assam, India',
   },
   {
     quote:
